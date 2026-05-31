@@ -60,26 +60,13 @@ Edit `config.json` to customize behavior:
 ### 4. Run
 
 ```bash
-python main.py
+Humanizer.exe
 ```
 
 You'll be prompted for the thread count (or just press Enter for the default). The script will process all tokens and output a summary with success/failure stats.
 
 ---
 
-## Compiling to EXE (Optional)
-
-To create a standalone `.exe` that doesn't require Python:
-
-```bash
-pip install nuitka
-
-python -m nuitka --onefile --windows-console-mode=force --output-dir=build --output-filename=Humanizer.exe --include-module=primp --include-module=PIL --include-package=websockets --include-package=python_socks --follow-import-to=colorama main.py
-```
-
-Then zip `Humanizer.exe` alongside your `input/`, `data/`, `avatar/`, and `banners/` folders.
-
----
 
 ## Output Files
 
